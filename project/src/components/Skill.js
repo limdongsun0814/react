@@ -11,23 +11,39 @@ const Skill = () => {
           className="flex flex-col items-center"
           tabIndex="0"
           role="img"
-          aria-label="Javascript"
+          aria-label="Java"
         >
           <img
-            src="./images/icons/javascript-original.svg"
+            src="./images/icons/free-icon-java-3291669.png"
             alt=""
             loading="lazy"
             className="w-16 mb-1"
             width="64px"
             height="64px"
           />
-          Javascript
+          JAVA
         </div>
         <div
           className="flex flex-col items-center"
           tabIndex="0"
           role="img"
-          aria-label="React Js"
+          aria-label="Python"
+        >
+          <img
+            src="./images/icons/free-icon-python-5968350.png"
+            alt=""
+            loading="lazy"
+            className="w-16 mb-1"
+            width="64px"
+            height="64px"
+          />
+          Python
+        </div>
+        <div
+          className="flex flex-col items-center"
+          tabIndex="0"
+          role="img"
+          aria-label="React"
         >
           <img
             src="./images/icons/react-original.svg"
@@ -37,71 +53,56 @@ const Skill = () => {
             width="64px"
             height="64px"
           />
-          React JS
+          React
         </div>
+
         <div
           className="flex flex-col items-center"
           tabIndex="0"
           role="img"
-          aria-label="Node Js"
+          aria-label="Spring FW & Boot"
         >
           <img
-            src="./images/icons/nodejs-original.svg"
+            src="./images/icons/icons8-봄-로고-480.png"
             alt=""
             loading="lazy"
             className="w-16 mb-1"
             width="64px"
             height="64px"
           />
-          Node JS
+          Spring FW & Boot
         </div>
         <div
           className="flex flex-col items-center"
           tabIndex="0"
           role="img"
-          aria-label="MongoDB"
+          aria-label="MySQL"
         >
           <img
-            src="./images/icons/mongodb-original.svg"
+            src="./images/icons/free-icon-programing-15484291.png"
             alt=""
             loading="lazy"
             className="w-16 mb-1"
             width="64px"
             height="64px"
           />
-          MongoDB
+          MySQL
         </div>
         <div
           className="flex flex-col items-center"
           tabIndex="0"
           role="img"
-          aria-label="HTML 5"
+          aria-label="Arduino"
         >
           <img
-            src="./images/icons/html5-original.svg"
+            src="./images/icons/icons8-아두-이노-240.png"
             alt=""
             loading="lazy"
             className="w-16 mb-1"
             width="64px"
             height="64px"
           />
-          HTML 5
-        </div>
-        <div
-          className="flex flex-col items-center"
-          tabIndex="0"
-          role="img"
-          aria-label="CSS 3"
-        >
-          <img
-            src="./images/icons/css3-original.svg"
-            alt=""
-            loading="lazy"
-            className="w-16 mb-1"
-            width="64px"
-            height="64px"
-          />
-          CSS 3
+          Arduino
         </div>
       </div>
     </section>

@@ -23,13 +23,13 @@ const Hero = () => {
       </div> */}
       <div className="max-w-md mb-auto space-y-1">
         <h1 className="mb-3 text-5xl font-bold md:text-7xl">안녕하세요.</h1>
-        <span className="font-bold text-orange-200 ">“하하”</span>
+        <span className="font-bold text-orange-200 ">“배움에 대한 욕심”</span>
         <p className="leading-relaxed tracking-wide">
           I have a passion for developing user-friendly, accessible and
           responsive websites. I never stop learning and for me, each new
           project is another adventure.{" "}
         </p>
-        <span className="font-bold text-orange-200 ">하하</span>
+        <span className="font-bold text-orange-200 ">“협업의 중요성”</span>
         <p className="leading-relaxed tracking-wide">
           I have a passion for developing user-friendly, accessible and
           responsive websites. I never stop learning and for me, each new
