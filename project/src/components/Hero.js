@@ -22,18 +22,21 @@ const Hero = () => {
         <div className="container" ref={container}></div>
       </div> */}
       <div className="max-w-md mb-auto space-y-1">
-        <h1 className="mb-3 text-5xl font-bold md:text-7xl">안녕하세요.</h1>
+        <h1 className="mb-3 text-5xl font-bold md:text-5xl">
+          안녕하세요.
+          <br></br>
+          임동선입니다.
+        </h1>
         <span className="font-bold text-orange-200 ">“배움에 대한 욕심”</span>
+        {/* 한컴독스 내용 */}
         <p className="leading-relaxed tracking-wide">
-          I have a passion for developing user-friendly, accessible and
-          responsive websites. I never stop learning and for me, each new
-          project is another adventure.{" "}
+          논어의 첫머리에 나오는 말처럼 배움과 성장에 욕심이 있는 개발자입니다.{" "}
         </p>
-        <span className="font-bold text-orange-200 ">“협업의 중요성”</span>
+        <span className="font-bold text-orange-200 ">“협력의 중요성”</span>
+        {/* css와 디자인 부분 */}
         <p className="leading-relaxed tracking-wide">
-          I have a passion for developing user-friendly, accessible and
-          responsive websites. I never stop learning and for me, each new
-          project is another adventure.{" "}
+          혼자만의 성장하는 방식이 아닌 상호간에 소통, 협력을 통한 성장을
+          중요시하는 개발자입니다.{" "}
         </p>
       </div>
     </section>
