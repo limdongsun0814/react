@@ -36,7 +36,9 @@ const Hero = () => {
         {/* css와 디자인 부분 */}
         <p className="leading-relaxed tracking-wide">
           혼자만의 성장하는 방식이 아닌 상호간에 소통, 협력을 통한 성장을
-          중요시하는 개발자입니다.{" "}
+          중요시하는 개발자입니다.
+          잠시 CICD 테스트 용으로 추가된 문자입니다.
+          {" "}
         </p>
       </div>
     </section>
