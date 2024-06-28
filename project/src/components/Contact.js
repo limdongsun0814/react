@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section className="my-28" id="contact">
+    <section className="my-28">
       <header className="h-20 px-5 pt-0 text-2xl font-bold border-b-2">
         <h2 className="mb-1">Thank You!!!</h2>
         <p className="text-base font-thin mb-0.5">사용자 위주의 개발과 지속적인 자기 개발을 통해 획득한 성장을 팀원 공유하는 개발자입니다.</p>
@@ -10,6 +10,9 @@ const Contact = () => {
       {/* <div className="flex flex-col flex-wrap justify-between md:mx-6 md:flex-row"> */}
       <div className="md:mx-6">
         <div className="float-right p-5 my-5 md:px-0">
+          <div id="contact">
+            <p className="font-bold">Contact</p>
+          </div>
           <div>
             {/* 이름 주소 */}
             <div className="inline-block mr-5">
