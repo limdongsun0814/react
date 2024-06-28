@@ -4,8 +4,8 @@ const Contact = () => {
   return (
     <section className="my-28" id="contact">
       <header className="h-20 px-5 pt-0 text-2xl font-bold border-b-2">
-        <h2>Contact Me</h2>
-        <p className="text-base font-thin">읽어 주셔서 감사합니다.</p>
+        <h2>Thank You!!!</h2>
+        <p className="text-base font-thin">사용자 위주의 개발과 지속적인 자기 개발을 통해 획득한 성장을 팀원 공유하는 개발자입니다.</p>
       </header>
       {/* <div className="flex flex-col flex-wrap justify-between md:mx-6 md:flex-row"> */}
       <div className="md:mx-6">
