@@ -55,7 +55,7 @@ const Hero = () => {
         <span className="font-bold text-orange-200 ">“소통과 성장”</span>
         {/* css와 디자인 부분 */}
         <p className="leading-relaxed tracking-wide">
-          자기 개발을 통해 획득한 성장을 공유하며 성장하는 개발자입니다.
+          자기 개발을 통해 획득한 성장을 팀원과 공유하며 성장하는 개발자입니다.
         </p>
         <br></br>
         <p className="leading-relaxed tracking-wide">

@@ -12,7 +12,7 @@ const projects = [
       {
         titleDescription: "담당역할",
         description:
-          "카드 최대 혜택,  카드 페이지, CSS 통합, 실종 반려견 찾기 딥러닝 모델 생성, 피부 질환 딥러닝 모델 생성",
+          "카드 최대 혜택,  카드 페이지, CSS 통합, 실종 반려견 찾기, 피부 질환",
       },
     ],
     tools: ["React", "Javascript", "Spring Boot", "MySQL", "Python"],
@@ -32,7 +32,7 @@ const projects = [
       },
       {
         titleDescription: "담당역할",
-        description: "로그인, 회원가입, 장바구니, 결제",
+        description: "로그인, 회원가입, 장바구니, 결제, 소셜 로그인",
       },
     ],
     tools: ["JSP", "Javascript", "Spring framework", "mariaDB"],
@@ -53,7 +53,7 @@ const projects = [
       {
         titleDescription: "담당역할",
         description:
-          "아두이노와 PLC, DC 모터 제어 (SPI, Serial, PWM), 회로 설계",
+          "검사기 모터 제어, 회로 설계",
       },
     ],
     tools: ["Arduino", "OpenCV", "Python", "Android"],
@@ -69,11 +69,11 @@ const projects = [
       {
         titleDescription: "수행목표",
         description:
-          "농자 옆에 설치된 반사판을 회전시켜 최적의 광량을 농장에 공급하고, 스마트팜 상태를 어플로 모니터링",
+          "농장에 설치된 반사판을 회전시켜 최적의 광량을 농장에 공급하고, 스마트팜 상태를 어플로 모니터링",
       },
       {
         titleDescription: "담당역할",
-        description: "아두이노 NANO 와 센서 센싱, 모터 제어 (I2C, Serial, PWM)",
+        description: "센서 센싱, 반사판 제어",
       },
     ],
     tools: ["Arduino", "Android", "PHP", "MySQL"],
@@ -94,7 +94,7 @@ const projects = [
       {
         titleDescription: "담당역할",
         description:
-          "모터 제어와 센서링(유량, 압력, 온도) 정보 유선 통신(RS485), 회로 설계",
+          "수로 벨브 제어와 유선 통신(RS485), 회로 설계",
       },
     ],
     tools: ["Arduino", "PHP", "Python", "Tensorflow", "MySQL"],
