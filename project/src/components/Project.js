@@ -50,7 +50,21 @@ const Project = () => {
                         <span className="font-bold text-orange-200 ">
                           {description.titleDescription}
                         </span>
-                        <p>{description.description}</p>
+                        <ol>
+                            {description.descriptionList.map((description,index)=>{
+                            let cnt = 0;
+                            for(const c of description){
+                              if(c==" "){
+                                cnt+=1;
+                              }else{
+                                break;
+                              }
+                            }
+                            console.log(cnt)
+                            const spaces = Array.from({ length: cnt }, (_, i) => <span key={i}>&nbsp;</span>);
+                            return(<li>{spaces}{description}</li>)
+                          })}
+                        </ol>
                       </div>
                     ))}
                     <div className="flex pb-2 space-x-3 overflow-auto">

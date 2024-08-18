@@ -1,10 +1,33 @@
 import React from "react";
+import axios from "axios";
 
 const Header = () => {
+  const pdfDownload = ()=>{
+    axios.get(`https://raw.githubusercontent.com/limdongsun0814/react/main/project/downloadFile/임동선 포트폴리오.pdf`,{responseType: 'blob',})
+    .then(rep=>{
+        const url = window.URL.createObjectURL(new Blob([rep.data]))
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = "test.json";
+        document.body.appendChild(a);
+        a.click();
+        setTimeout(() => {
+            window.URL.revokeObjectURL(url);
+            }, 1000);
+        a.remove();
+    });
+}
   return (
     <>
       <nav className="space-x-10">
         <ul className="flex flex-row justify-center space-x-4 font-thin md:space-x-10 md:text-xl md:justify-end">
+          <li>
+            <a onClick={pdfDownload}
+              className="px-5 py-1 rounded-lg hover:bg-gray focus:bg-gray"
+            >
+              Download PDF
+            </a>
+          </li>
           <li>
             <a
               href="#projects"
