@@ -3,9 +3,7 @@ import axios from "axios";
 
 const Header = () => {
   const pdfDownload = ()=>{
-    // axios.get(`https://raw.githubusercontent.com/limdongsun0814/react/blob/main/project/src/downloadFile/임동선%20포트폴리오.pdf`,{responseType: 'blob',})
-    // .then(rep=>{
-    const url = "./downloadFile/임동선 포트폴리오.pdf";// window.URL.createObjectURL(new Blob([rep.data]))
+    const url = "./downloadFile/임동선 포트폴리오.pdf";
     const a = document.createElement('a');
     a.href = url;
     a.download = "임동선 포트폴리오.pdf";
@@ -15,7 +13,6 @@ const Header = () => {
         window.URL.revokeObjectURL(url);
         }, 1000);
     a.remove();
-    // });
 }
   return (
     <>
