@@ -1,7 +1,7 @@
 // 멍줍, 빵이오, 자바 개인 프로젝트, 스마트팜, 탭검사기, 수로, 졸업논문
 const projects = [
   {
-    title: "멍줍 App",
+    title: "멍줍",
     image: "./images/멍줍.png",
     description: [
       {
@@ -14,10 +14,10 @@ const projects = [
       {
         titleDescription: "서비스 특징",
         descriptionList:[
-          "  - OpenStreetMap apI를 사용한 내비게이션, 산책 대시보드",
+          "  - OpenStreetMap API를 사용한 내비게이션, 산책 대시보드",
           "  - 완전탐색 알고리즘을 사용한 카드 최대 혜택",
           "  - 크롤링을 활용한 숨은 가맹점 추천",
-          "  - 전단지 팝업",
+          "  - 유기견 전단지 팝업",
           "  - 딥러닝 모델을 사용한 피부 질환 검사, 강아지 이미지 검색",
         ]
       },
@@ -32,7 +32,7 @@ const projects = [
     github: "https://github.com/shinhan3/mungzoup",
     linkCheck: false,
     link: "",
-    day: "2024-01-08 ~ 2024-02-29 참여 인원 [6]",
+    day: "2024-01-08 ~ 2024-02-29 참여 인원: 6",
   },
   {
     title: "동네빵집 플랫폼",
@@ -48,13 +48,13 @@ const projects = [
         titleDescription: "서비스 특징",
         descriptionList:[
           "   - 소셜 로그인(카카오, 네이버) 및 아이디 저장",
-          "   - SSE 통신을 사용한 소비자와 판매자 사이의 알람 서비스",
+          "   - SSE 통신을 사용한 소비자와 판매자 알람 서비스",
           "   - 지속적인 사용을 위한 자동 적립 마일리지 시스템",
-          "   - 카카오 지도 API와 다음 주소 API를 주변 빵집 검색",
+          "   - 카카오 지도 API와 다음 주소 API를 사용한 주변 빵집 검색",
           "   - 포트원 결제 API를 이용한 결제 시스템",
           "   - 판매자 메뉴 및 재고 관리 시스템",
           "   - 갤린더와 조건 검색을 통한 대시보드",
-          "   - 소비자의 편리성을 올려주기 위한 메뉴 및 가게 검색 시스템",
+          "   - 소비자의 편리성을 올리기 위한 메뉴 및 가게 검색 시스템",
         ]
       },
       {
@@ -68,80 +68,9 @@ const projects = [
     github: "https://github.com/limdongsun0814/4shinhan",
     linkCheck: false,
     link: "",
-    day: "2023-11-03 ~ 2024-01-05 참여 인원 [6]",
+    day: "2023-11-03 ~ 2024-01-05 참여 인원: 6",
   }, //이미지
-  {
-    title: "탭 검사기",
-    image: "./images/탭검사기.png",
-    description: [
-      {
-        titleDescription: "프로젝트 개요",
-        descriptionList:[
-          "   - 나사산이 불량인 경우 정상 나사산보다 이상 토크를 발생",
-          "   - 검사기의 토크를 측정해서 나사산의 정상 여부를 판별 및 어플리케이션 개발",
-        ]
-      },
-      {
-        titleDescription: "서비스 특징",
-        descriptionList:[
-          "   - 하드웨어",
-          "     a. 접근기",
-          "       1. 검사 진행 전 피검사물에 접촉할 수 있도록 해주는 역할",
-          "       2. 원을 도출하고 나사산의 규격과 피검사물의 위치를 조절",
-          "     b. 검사기",
-          "       1. 검사기의 운동에너지를 공급하는 동력부",
-          "       2. 공급 받은 회전에너지의 일부분을 직선에너지로 변환하는 회전부",
-          "       3. 검사기의 충격 보호 및 다양한 사양의 나사산 검사를 위한 완충부",
-          "       4. 피검사물과 접촉해서 검사를 진행하는 검사부",
-          
-        ]
-      },
-      {
-        titleDescription: "담당역할",
-        descriptionList:[
-          "검사기 모터 제어, 회로 설계",
-        ]
-      },
-    ],
-    tools: ["Arduino", "OpenCV", "Python", "Android"],
-    github: "https://github.com/limdongsun0814/Tap-Inspection",
-    linkCheck: true,
-    link: "https://ieeexplore.ieee.org/document/9268255",
-    day: "2019-01-02 ~ 2019-12-29 참여 인원 [4]",
-  },
-  {
-    title: "스마트팜",
-    image: "./images/스마트팜.png",
-    description: [
-      {
-        titleDescription: "프로젝트 개요",
-        descriptionList:[
-          "   - 각종 센서 센싱 및 외부기기 자동제어",
-          "   - 최적의 광량을 공급하는 반사판 제어 및 모니터링 시스템",
-        ]
-      },
-      {
-        titleDescription: "서비스 특징",
-        descriptionList: [
-          "   - 반사판 제어 알고리즘",
-          "     1. 공장이 처음으로 기동 시 회전 가능한 각도를 전부 탐색하는 scan",
-          "     2. scan 이후 경사하강법을 활용해서 최적의 광량으로 반사판 제어",
-          "   - 스마트팜 모니터링 및 기준치 제어 시스템 ",
-        ]
-      },
-      {
-        titleDescription: "담당역할",
-        descriptionList: [
-          "센서 센싱, 반사판 제어",
-        ]
-      },
-    ],
-    tools: ["Arduino", "Android", "PHP", "MySQL"],
-    github: "https://github.com/limdongsun0814/SmartFarm",
-    linkCheck: true,
-    link: "https://ieeexplore.ieee.org/document/9268238",
-    day: "2019-01-02 ~ 2019-12-29 참여 인원 [4]",
-  },
+  
   {
     title: "수로",
     image: "./images/수로.png",
@@ -149,8 +78,8 @@ const projects = [
       {
         titleDescription: "프로젝트 개요",
         descriptionList:[
-          "   - 인터넷이 되지 않은 환경에서 수로 벨브 제어 및 상태를 송수신 시스템",
-          "   - 수로의 고장 판별하는 시스템",
+          "   - 인터넷이 되지 않은 환경에서 수로 벨브 제어 및 상태를 송수신하는 시스템",
+          "   - 수로 벨브의 고장 판별 시스템",
         ]
       },
       {
@@ -172,14 +101,86 @@ const projects = [
     github: "https://github.com/limdongsun0814/SmartValve",
     linkCheck: true,
     link: "https://www.mdpi.com/2075-1702/10/8/659",
-    day: "2020-06-28 ~ 2022-12-28 참여 인원 [4]",
+    day: "2020-06-28 ~ 2022-12-28 참여 인원: 4",
+  },
+  {
+    title: "스마트팜",
+    image: "./images/스마트팜.png",
+    description: [
+      {
+        titleDescription: "프로젝트 개요",
+        descriptionList:[
+          "   - 각종 센서 센싱 및 외부기기 자동제어",
+          "   - 최적의 광량을 공급하는 반사판 제어 및 모니터링 시스템",
+        ]
+      },
+      {
+        titleDescription: "서비스 특징",
+        descriptionList: [
+          "   - 반사판 제어 알고리즘",
+          "     1. 공장이 처음으로 기동 시 회전 가능한 각도를 전부 탐색하는 scan",
+          "     2. scan 이후 경사하강법을 활용한 최적의 광량 제어",
+          "   - 스마트팜 모니터링 및 센서 기준치 제어 시스템 ",
+        ]
+      },
+      {
+        titleDescription: "담당역할",
+        descriptionList: [
+          "센서 센싱, 반사판 제어",
+        ]
+      },
+    ],
+    tools: ["Arduino", "Android", "PHP", "MySQL"],
+    github: "https://github.com/limdongsun0814/SmartFarm",
+    linkCheck: true,
+    link: "https://ieeexplore.ieee.org/document/9268238",
+    day: "2019-01-02 ~ 2019-12-29 참여 인원: 4",
+  },
+  {
+    title: "탭 검사기",
+    image: "./images/탭검사기.png",
+    description: [
+      {
+        titleDescription: "프로젝트 개요",
+        descriptionList:[
+          "   - 나사산이 불량인 경우 이상 토크 발생 ",
+          "   - 검사기의 토크를 측정해서 나사산의 정상 여부를 판별 및 어플리케이션 개발",
+        ]
+      },
+      {
+        titleDescription: "서비스 특징",
+        descriptionList:[
+          "   - 하드웨어",
+          "     a. 접근기",
+          "       1. 검사 진행 전 피검사물에 접촉할 수 있도록 해주는 역할",
+          "       2. 원을 도출하고 나사산의 규격과 피검사물의 위치를 조절",
+          "     b. 검사기",
+          "       1. 검사기의 운동에너지를 공급하는 동력부",
+          "       2. 공급 받은 회전에너지의 일부분을 직선에너지로 변환하는 회전부",
+          "       3. 검사기의 충격 보호 및 다양한 사양의 나사산 검사를 위한 완충부",
+          "       4. 피검사물과 접촉해서 검사를 진행하는 검사부",
+          "   - Hough Circle Transform 알고리즘을 이용한 나사산 규격 판별",
+        ]
+      },
+      {
+        titleDescription: "담당역할",
+        descriptionList:[
+          "검사기 모터 제어, 회로 설계",
+        ]
+      },
+    ],
+    tools: ["Arduino", "OpenCV", "Python", "Android"],
+    github: "https://github.com/limdongsun0814/Tap-Inspection",
+    linkCheck: true,
+    link: "https://ieeexplore.ieee.org/document/9268255",
+    day: "2019-01-02 ~ 2019-12-29 참여 인원: 4",
   },
   {
     title: "나사대회",
     image: "./images/나사대회.png",
     description: [
       {
-        titleDescription: "수행목표",
+        titleDescription: "데회 목표",
         descriptionList:[
           "   - 로봇을 자동 제어하며 자원 탐지 / 자원 채취 / 기지 복귀 미션을 연속적으로 수행하면서 점수를 획득하는 대회",
         ]
@@ -212,7 +213,7 @@ const projects = [
     github: "https://github.com/limdongsun0814/Space-Robotics-Challenge",
     linkCheck: true,
     link: "https://www.riss.kr/search/detail/DetailView.do?p_mat_type=be54d9b8bc7cdb09&control_no=7b741b8df56ce8f9ffe0bdc3ef48d419",
-    day: "2019-08-12 ~ 2021-08-31 참여 인원 [4]",
+    day: "2019-08-12 ~ 2021-08-31 참여 인원: 4",
   },
   // {
   //   title: "졸업 논문",

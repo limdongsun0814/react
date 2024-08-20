@@ -28,42 +28,41 @@ const Hero = () => {
           임동선입니다.
         </h1>
         <span className="font-bold text-orange-200 ">“사용자가 이용하고 싶은 서비스를 개발하는 개발자입니다.”</span>
-        {/* 한컴독스 내용 */}
         <p className="leading-relaxed tracking-wide">
-          모든 서비스에는 사용자가 존재하고, 이 사용자가 쉽고 친숙함을 목표하는 개발자입니다. 
+          &nbsp;"모든 서비스에는 사용자가 존재하고, <span class="font-bold" style={{color:"#a162e8"}}>사용자가 사용하기 쉽고 친숙해야</span> 서비스의 가치를 인정받을 수 있다"고 생각하는 개발자입니다.  
           {" "}
         </p>
-        <br></br>
+        {/* <br></br> */}
         <p className="leading-relaxed tracking-wide">
-          대학원 시절에는 주로 기업 연계 사물 인터넷(IoT) 과제로 개발했습니다. {" "}
+          대학원 시절에는 <span class="font-bold" style={{color:"#a162e8"}}>사물 인터넷(IoT) 개발</span>했습니다.
         </p>
+        {/* <br></br> */}
         <p className="leading-relaxed tracking-wide">
-          담당 역활은 유선 통신(I2C, RS485 등), 제어(PID 제어), 필터(LPF, HPF, Kalman filter 등), 무선 통신(MQTT, HTML, LoRa, Zigbee 등)를 담당했습니다. 
-          {" "}
+          졸업 후, '<span class="font-bold" style={{color:"#a162e8"}}>웹 서비스 개발자</span>'라는 꿈을 이루기 위해 JAVA 웹 서비스 풀스택 교육 과정을 이수했습니다.{" "}
         </p>
+        {/* <br></br> */}
         <p className="leading-relaxed tracking-wide">
-          신한 DS 금융 SW 아카데미에서는 JAVA 웹 서비스 풀스택 교육 과정을 이수했습니다.
+          동네빵집 플랫폼과 멍줍 프로젝트를 통해 JQuery, RDBMS, docker 등 웹 서비스 개발 역량을 강화했습니다.  
         </p>
-        
-        <br></br>
+        {/* <br></br> */}
         <p className="leading-relaxed tracking-wide"> 
-          사용자 위주의 개발을 통해 사용자가 쉽고 친숙함을 목표로 성장하는 개발자입니다.
+          개발 목표는 <span class="font-bold" style={{color:"#a162e8"}}>사용자가 이용하기 쉽운 서비스 개발</span>을 목표로 성장하는 개발자입니다.
           {" "}
         </p>
         <br></br>
         
-        <span className="font-bold text-orange-200 ">“소통과 성장”</span>
+        <span className="font-bold text-orange-200 ">“소통과 성장, 계획”</span>
         {/* css와 디자인 부분 */}
         <p className="leading-relaxed tracking-wide">
-          자기 개발을 통해 획득한 성장을 팀원과 공유하며 성장하는 개발자입니다.
+          &nbsp;<span class="font-bold" style={{color:"#a162e8"}}>지속적인 자기 개발</span>을 통해 역량을 강화하고 팀원과  <span class="font-bold" style={{color:"#a162e8"}}>소통</span>하며 공유하며 성장하는 개발자입니다.
         </p>
-        <br></br>
+        {/* <br></br> */}
         <p className="leading-relaxed tracking-wide">
-          사용자의 피드백과 다양한 방법의 매소드 구현으로 프로젝트의 퀄리티를 높이는 개발자입니다.
+          피드백과 다양한 매소드 구현으로 서비스의 성능을 높이는 개발자입니다.
         </p>
-        <br></br>
+        {/* <br></br> */}
         <p className="leading-relaxed tracking-wide">
-          주단위 계획하여 시간을 효율적으로 관리하여 성장하는 개발자입니다.
+          <span class="font-bold" style={{color:"#a162e8"}}>주단위 계획</span>하여 시간을 효율적으로 관리하여 성장하는 개발자입니다.
           {" "}
         </p>
       </div>
