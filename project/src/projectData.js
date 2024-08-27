@@ -101,7 +101,7 @@ const projects = [
     github: "https://github.com/limdongsun0814/SmartValve",
     linkCheck: true,
     link: "https://www.mdpi.com/2075-1702/10/8/659",
-    day: "2020-06-28 ~ 2022-12-28 참여 인원: 4",
+    day: "2020-06-28 ~ 2021-12-28 참여 인원: 4",
   },
   {
     title: "스마트팜",
