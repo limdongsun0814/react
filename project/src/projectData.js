@@ -6,26 +6,26 @@ const projects = [
     description: [
       {
         titleDescription: "프로젝트 개요",
-        descriptionList:[
+        descriptionList: [
           "  - 반려인들을 위한 양육생활 지원하는 Application",
           "  - 분산된 여러 기능을 하나의 Apllication으로 제공하는 통합앱",
-        ]
+        ],
       },
       {
         titleDescription: "서비스 특징",
-        descriptionList:[
+        descriptionList: [
           "  - OpenStreetMap API를 사용한 내비게이션, 산책 대시보드",
           "  - 완전탐색 알고리즘을 사용한 카드 최대 혜택",
           "  - 크롤링을 활용한 숨은 가맹점 추천",
           "  - 유기견 전단지 팝업",
           "  - 딥러닝 모델을 사용한 피부 질환 검사, 강아지 이미지 검색",
-        ]
+        ],
       },
       {
         titleDescription: "담당역할",
-        descriptionList:[
+        descriptionList: [
           "  DB 설계 , 최대 해택 , 딥러닝 모델 설계, CSS 및 기능 통합",
-        ]
+        ],
       },
     ],
     tools: ["React", "Javascript", "Spring Boot", "MySQL", "Python"],
@@ -40,13 +40,13 @@ const projects = [
     description: [
       {
         titleDescription: "프로젝트 개요",
-        descriptionList:[
+        descriptionList: [
           "   - 동네 빵집에서 갓 나온 따뜻한 빵을 소비자에게 제공하는 플랫폼",
-        ]
+        ],
       },
       {
         titleDescription: "서비스 특징",
-        descriptionList:[
+        descriptionList: [
           "   - 소셜 로그인(카카오, 네이버) 및 아이디 저장",
           "   - SSE 통신을 사용한 소비자와 판매자 알람 서비스",
           "   - 지속적인 사용을 위한 자동 적립 마일리지 시스템",
@@ -55,13 +55,13 @@ const projects = [
           "   - 판매자 메뉴 및 재고 관리 시스템",
           "   - 갤린더와 조건 검색을 통한 대시보드",
           "   - 소비자의 편리성을 올리기 위한 메뉴 및 가게 검색 시스템",
-        ]
+        ],
       },
       {
         titleDescription: "담당역할",
-        descriptionList:[ 
+        descriptionList: [
           "  DB 설계 및 docker 배포 , 회원가입 및 로그인, 장바구니, 결제, 검색",
-        ]
+        ],
       },
     ],
     tools: ["JSP", "Javascript", "Spring framework", "mariaDB"],
@@ -70,31 +70,29 @@ const projects = [
     link: "",
     day: "2023-11-03 ~ 2024-01-05 참여 인원: 6",
   }, //이미지
-  
+
   {
     title: "수로",
     image: "./images/수로.png",
     description: [
       {
         titleDescription: "프로젝트 개요",
-        descriptionList:[
+        descriptionList: [
           "   - 인터넷이 되지 않은 환경에서 수로 벨브 제어 및 상태를 송수신하는 시스템",
           "   - 수로 벨브의 고장 판별 시스템",
-        ]
+        ],
       },
       {
         titleDescription: "서비스 특징",
-        descriptionList:[
+        descriptionList: [
           "   - 수로와 게이트웨이 간 LoRa를 이용해 연결하는 데이터 송수신 시스템",
           "   - 수로의 상태를 실시간 모니터링 및 대시보드를 통한 시각화",
           "   - 딥러닝 모델을 통한 수로 고장 유형 판별 시스템",
-        ]
+        ],
       },
       {
         titleDescription: "담당역할",
-        descriptionList:[
-          "  수로 벨브 제어, 유선 통신, LoRa, 회로 설계",
-        ]
+        descriptionList: ["  수로 벨브 제어, 유선 통신, LoRa, 회로 설계"],
       },
     ],
     tools: ["Arduino", "PHP", "Python", "Tensorflow", "MySQL"],
@@ -109,10 +107,10 @@ const projects = [
     description: [
       {
         titleDescription: "프로젝트 개요",
-        descriptionList:[
+        descriptionList: [
           "   - 각종 센서 센싱 및 외부기기 자동제어",
           "   - 최적의 광량을 공급하는 반사판 제어 및 모니터링 시스템",
-        ]
+        ],
       },
       {
         titleDescription: "서비스 특징",
@@ -121,13 +119,11 @@ const projects = [
           "     1. 공장이 처음으로 기동 시 회전 가능한 각도를 전부 탐색하는 scan",
           "     2. scan 이후 경사하강법을 활용한 최적의 광량 제어",
           "   - 스마트팜 모니터링 및 센서 기준치 제어 시스템 ",
-        ]
+        ],
       },
       {
         titleDescription: "담당역할",
-        descriptionList: [
-          "센서 센싱, 반사판 제어",
-        ]
+        descriptionList: ["센서 센싱, 반사판 제어"],
       },
     ],
     tools: ["Arduino", "Android", "PHP", "MySQL"],
@@ -142,14 +138,14 @@ const projects = [
     description: [
       {
         titleDescription: "프로젝트 개요",
-        descriptionList:[
+        descriptionList: [
           "   - 나사산이 불량인 경우 이상 토크 발생 ",
           "   - 검사기의 토크를 측정해서 나사산의 정상 여부를 판별 및 어플리케이션 개발",
-        ]
+        ],
       },
       {
         titleDescription: "서비스 특징",
-        descriptionList:[
+        descriptionList: [
           "   - 하드웨어",
           "     a. 접근기",
           "       1. 검사 진행 전 피검사물에 접촉할 수 있도록 해주는 역할",
@@ -160,13 +156,11 @@ const projects = [
           "       3. 검사기의 충격 보호 및 다양한 사양의 나사산 검사를 위한 완충부",
           "       4. 피검사물과 접촉해서 검사를 진행하는 검사부",
           "   - Hough Circle Transform 알고리즘을 이용한 나사산 규격 판별",
-        ]
+        ],
       },
       {
         titleDescription: "담당역할",
-        descriptionList:[
-          "검사기 모터 제어, 회로 설계",
-        ]
+        descriptionList: ["검사기 모터 제어, 회로 설계"],
       },
     ],
     tools: ["Arduino", "OpenCV", "Python", "Android"],
@@ -180,33 +174,33 @@ const projects = [
     image: "./images/나사대회.png",
     description: [
       {
-        titleDescription: "데회 목표",
-        descriptionList:[
+        titleDescription: "대회 목표",
+        descriptionList: [
           "   - 로봇을 자동 제어하며 자원 탐지 / 자원 채취 / 기지 복귀 미션을 연속적으로 수행하면서 점수를 획득하는 대회",
-        ]
+        ],
       },
       {
         titleDescription: "대회 규칙",
-        descriptionList:[
+        descriptionList: [
           "   - 로봇의 종류는 총 3가지 자원을 탐지하는 Scout, 채취하는 Excavator, 수송하는 Hauler",
           "   - 로봇들은 공통적으로 IMU, LIDAR 센서, 스테레오 카메라 제공",
           "   - 로봇들의 배터리는 태양광 패널 또는 Repair Station에서 충전 가능",
           "   - Hauler가 Plant에 광물을 제출하면 점수 획득",
-        ]
+        ],
       },
       {
         titleDescription: "특징",
-        descriptionList:[
+        descriptionList: [
           "   - IMU, SALM에서 발생된 누적 오차 제거를 위한 이미지 기반 좌표 보정",
           "   - YOLO를 사용한 이미지 분류",
           "   - 판별되지 못한 암석을 LIDAR 센서의 연속성로 감지로 추가로 판별 및 회피 기동",
-        ]
+        ],
       },
       {
         titleDescription: "담당역할",
-        descriptionList:[
+        descriptionList: [
           "RTAB SLAM을 이용한 Mapping, YOLO를 이용한 장애물 및 현장 자원 판별, Docker를 통한 배포",
-        ]
+        ],
       },
     ],
     tools: ["Python", "ROS", "OpenCV", "YOLO", "Gazebo", "Docker"],
