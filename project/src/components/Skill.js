@@ -7,6 +7,7 @@ const Skill = () => {
         <h2>Skills & Tools</h2>
       </header>
       <div className="grid grid-cols-3 gap-5 my-7 md:grid-cols-6">
+        {/* js, c, */}
         <div
           className="flex flex-col items-center"
           tabIndex="0"

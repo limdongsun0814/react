@@ -6,13 +6,14 @@ const Project = () => {
     dots: true,
     infinite: true,
     speed: 500,
+    arrows: false,
     sliesToShow: 1,
     slidesToScroll: 1,
   };
   projects[0].description.map((description, index) => {
     console.log(description);
   });
-  console.log(projects[0].description, "aaa");
+  // console.log(projects[0].description, "aaa");
   return (
     <>
       <section className="px-5 my-28" id="projects">

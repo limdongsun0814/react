@@ -9,11 +9,9 @@ const Contact = () => {
       </header>
       {/* <div className="flex flex-col flex-wrap justify-between md:mx-6 md:flex-row"> */}
       <div className="md:mx-6">
-        <div className="float-right p-5 my-5 md:px-0">
+        <div className="float-right p-5 my-5 md:px-0 flex w-full justify-between">
           <div id="contact">
             <p className="font-bold">Contact</p>
-          </div>
-          <div>
             {/* 이름 주소 */}
             <div className="inline-block mr-5">
               <p className="font-bold">이름</p>
@@ -31,6 +29,9 @@ const Contact = () => {
               <p className="font-bold">전화 번호</p>
               <p className="font-thin">010-3393-2244</p>
             </div>
+            </div>
+            <div>
+            <p className="font-bold">Link</p>
             <div className="inline-block mr-5">
               <a
                 href="https://github.com/limdongsun0814"
@@ -67,9 +68,9 @@ const Contact = () => {
                 </span>
               </a>
             </div>
+            </div>
           </div>
         </div>
-      </div>
     </section>
   );
 };
