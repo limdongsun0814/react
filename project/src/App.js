@@ -5,6 +5,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 const Header = lazy(() => import("./components/Header"));
 
 function App() {
+  if (process.env.NODE_ENV === "production") {
+    console = window.console || {};
+    console.log = function no_console() {};
+    console.warn = function no_console() {};
+    console.error = function () {};
+  }
   return (
     <Suspense
       fallback={
