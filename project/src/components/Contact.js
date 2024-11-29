@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
+import { getCookie, setCookie } from "../Cookie";
+// const checkCookie = uuidv4();
 
 const Contact = () => {
+
   return (
     <section className="my-28">
       <header className="h-20 px-5 pt-0 text-2xl font-bold border-b-2">
@@ -28,6 +31,10 @@ const Contact = () => {
             <div className="inline-block mr-5">
               <p className="font-bold">전화 번호</p>
               <p className="font-thin">010-3393-2244</p>
+            </div>
+            <div className="inline-block mr-5">
+              <p className="font-bold">방문자 수</p>
+              <p className="font-thin">0</p>
             </div>
             </div>
             <div>

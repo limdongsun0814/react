@@ -1,8 +1,24 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import Main from "./screens/Main";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
 const Header = lazy(() => import("./components/Header"));
+
+const usePageViews = () => {
+  const location = useLocation();
+  console.log(location.pathname)
+
+  useEffect(() => {
+      window.gtag('config', 'G-CKYYTJV57R', {
+          page_path: location.pathname,
+      });
+  }, [location]);
+};
+
+const PageViewTracker = () => {
+  usePageViews();
+  return null;
+};
 
 function App() {
   // 로그 제거 코드
@@ -13,6 +29,8 @@ function App() {
     console.error = function () {};
   }
   
+  // usePageViews();
+
   return (
     <Suspense
       fallback={
@@ -27,6 +45,7 @@ function App() {
       <div className="container mx-auto my-10 bg-black App max-w-screen-1g">
         <BrowserRouter>
           <Header />
+          <PageViewTracker />
           <Routes>
             <Route path="/" element={<Main />}></Route>
             <Route path="/react" element={<Main />}></Route>
