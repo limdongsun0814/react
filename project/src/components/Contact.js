@@ -1,6 +1,4 @@
 import React, { useContext, useEffect, useState } from "react";
-import { getCookie, setCookie } from "../Cookie";
-// const checkCookie = uuidv4();
 
 const Contact = () => {
 
