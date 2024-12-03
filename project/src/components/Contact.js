@@ -1,7 +1,13 @@
 import React, { useContext, useEffect, useState } from "react";
+import { getTotalActiveUsersAndScreenPageViews } from "../utils/GA4";
 
 const Contact = () => {
-
+  const [activeUsers,setActiveUsers] = useState();
+  const [screenPageViews, setScreenPageViews] =useState();
+  useEffect(() => {
+      getTotalActiveUsersAndScreenPageViews(setActiveUsers,setScreenPageViews);
+    }
+  );
   return (
     <section className="my-28">
       <header className="h-20 px-5 pt-0 text-2xl font-bold border-b-2">
@@ -26,13 +32,17 @@ const Contact = () => {
               <p className="font-bold">이메일</p>
               <p className="font-thin">asme12@naver.com</p>
             </div>
-            <div className="inline-block mr-5">
+            {/* <div className="inline-block mr-5">
               <p className="font-bold">전화 번호</p>
               <p className="font-thin">010-3393-2244</p>
+            </div> */}
+            <div className="inline-block mr-5">
+              <p className="font-bold">조회수</p>
+              <p className="font-thin">{screenPageViews}</p>
             </div>
             <div className="inline-block mr-5">
-              <p className="font-bold">방문자 수</p>
-              <p className="font-thin">0</p>
+              <p className="font-bold">방문자</p>
+              <p className="font-thin">{activeUsers}</p>
             </div>
             </div>
             <div>
