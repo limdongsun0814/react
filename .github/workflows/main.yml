@@ -44,10 +44,10 @@ jobs:
       - name: set .env
         run: |
           cd project
-          echo "REACT_APP_GA4_PROPERTY_ID=${{ secrets.REACT_APP_GA4_PROPERTY_ID }}" >> .env
-          echo "REACT_APP_OAUTH_CLIENT_ID=${{ secrets.REACT_APP_OAUTH_CLIENT_ID }}" >> .env
-          echo "REACT_APP_OAUTH_CLIENT_SECRET=${{ secrets.REACT_APP_OAUTH_CLIENT_SECRET }}" >> .env
-          echo "REACT_APP_OAUTH_REFRESH_TOKEN=${{ secrets.REACT_APP_OAUTH_REFRESH_TOKEN }}" >> .env
+          echo "REACT_APP_GA4_PROPERTY_ID=${{ secrets.REACT_APP_GA4_PROPERTY_ID }}" >> $GITHUB_ENV
+          echo "REACT_APP_OAUTH_CLIENT_ID=${{ secrets.REACT_APP_OAUTH_CLIENT_ID }}" >> $GITHUB_ENV
+          echo "REACT_APP_OAUTH_CLIENT_SECRET=${{ secrets.REACT_APP_OAUTH_CLIENT_SECRET }}" >> $GITHUB_ENV
+          echo "REACT_APP_OAUTH_REFRESH_TOKEN=${{ secrets.REACT_APP_OAUTH_REFRESH_TOKEN }}" >> $GITHUB_ENV
           cat .env
         
       - name: list
