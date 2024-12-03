@@ -53,11 +53,6 @@ jobs:
         run: ls -l
 
       - name: build
-        # env:
-        #   REACT_APP_API_URL: ${{ secrets.REACT_APP_API_URL }}
-        #   REACT_APP_OAUTH_CLIENT_ID: ${{ secrets.REACT_APP_OAUTH_CLIENT_ID }}
-        #   REACT_APP_OAUTH_CLIENT_SECRET: ${{ secrets.REACT_APP_OAUTH_CLIENT_SECRET }}
-        #   REACT_APP_OAUTH_REFRESH_TOKEN: ${{ secrets.REACT_APP_OAUTH_REFRESH_TOKEN }}
         run: |
           ls
           cd project
