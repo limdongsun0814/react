@@ -34,7 +34,10 @@ jobs:
           echo "REACT_APP_OAUTH_CLIENT_ID=${{ secrets.REACT_APP_OAUTH_CLIENT_ID }}" >> .env
           echo "REACT_APP_OAUTH_CLIENT_SECRET=${{ secrets.REACT_APP_OAUTH_CLIENT_SECRET }}" >> .env
           echo "REACT_APP_OAUTH_REFRESH_TOKEN=${{ secrets.REACT_APP_OAUTH_REFRESH_TOKEN }}" >> .env
-          
+
+      - name: list
+        run: ls
+       
       - name: Install modules
         run: | 
           cd project
@@ -55,6 +58,7 @@ jobs:
           npm run build2
           ls
           cp build/index.html build/404.html
+          
       - name: gh-page
         uses: peaceiris/actions-gh-pages@v3
         with:
