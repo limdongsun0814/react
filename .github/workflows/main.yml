@@ -41,23 +41,23 @@ jobs:
           PUBLIC_URL=$(echo $GITHUB_REPOSITORY | sed -r 's/^.+\/(.+)$/\/\1\//')
           echo PUBLIC_URL=$PUBLIC_URL > ./env
 
-      # - name: set .env
-      #   run: |
-      #     cd project
-      #     echo "REACT_APP_GA4_PROPERTY_ID=${{ secrets.REACT_APP_GA4_PROPERTY_ID }}" >> $GITHUB_ENV
-      #     echo "REACT_APP_OAUTH_CLIENT_ID=${{ secrets.REACT_APP_OAUTH_CLIENT_ID }}" >> $GITHUB_ENV
-      #     echo "REACT_APP_OAUTH_CLIENT_SECRET=${{ secrets.REACT_APP_OAUTH_CLIENT_SECRET }}" >> $GITHUB_ENV
-      #     echo "REACT_APP_OAUTH_REFRESH_TOKEN=${{ secrets.REACT_APP_OAUTH_REFRESH_TOKEN }}" >> $GITHUB_ENV
+      - name: set .env
+        run: |
+          cd project
+          echo "REACT_APP_GA4_PROPERTY_ID=${{ secrets.REACT_APP_GA4_PROPERTY_ID }}" >> $GITHUB_ENV
+          echo "REACT_APP_OAUTH_CLIENT_ID=${{ secrets.REACT_APP_OAUTH_CLIENT_ID }}" >> $GITHUB_ENV
+          echo "REACT_APP_OAUTH_CLIENT_SECRET=${{ secrets.REACT_APP_OAUTH_CLIENT_SECRET }}" >> $GITHUB_ENV
+          echo "REACT_APP_OAUTH_REFRESH_TOKEN=${{ secrets.REACT_APP_OAUTH_REFRESH_TOKEN }}" >> $GITHUB_ENV
         
       - name: list
         run: ls -l
 
       - name: build
-        env:
-          REACT_APP_API_URL: ${{ secrets.REACT_APP_API_URL }}
-          REACT_APP_OAUTH_CLIENT_ID: ${{ secrets.REACT_APP_OAUTH_CLIENT_ID }}
-          REACT_APP_OAUTH_CLIENT_SECRET: ${{ secrets.REACT_APP_OAUTH_CLIENT_SECRET }}
-          REACT_APP_OAUTH_REFRESH_TOKEN: ${{ secrets.REACT_APP_OAUTH_REFRESH_TOKEN }}
+        # env:
+        #   REACT_APP_API_URL: ${{ secrets.REACT_APP_API_URL }}
+        #   REACT_APP_OAUTH_CLIENT_ID: ${{ secrets.REACT_APP_OAUTH_CLIENT_ID }}
+        #   REACT_APP_OAUTH_CLIENT_SECRET: ${{ secrets.REACT_APP_OAUTH_CLIENT_SECRET }}
+        #   REACT_APP_OAUTH_REFRESH_TOKEN: ${{ secrets.REACT_APP_OAUTH_REFRESH_TOKEN }}
         run: |
           ls
           cd project
