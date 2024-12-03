@@ -27,14 +27,7 @@ jobs:
           restore-keys: ${{runner.os}}-node-
       - name: list
         run: ls
-      
-      - name: set .env
-        run: |
-          echo "REACT_APP_GA4_PROPERTY_ID=${{ secrets.REACT_APP_GA4_PROPERTY_ID }}" >> .env
-          echo "REACT_APP_OAUTH_CLIENT_ID=${{ secrets.REACT_APP_OAUTH_CLIENT_ID }}" >> .env
-          echo "REACT_APP_OAUTH_CLIENT_SECRET=${{ secrets.REACT_APP_OAUTH_CLIENT_SECRET }}" >> .env
-          echo "REACT_APP_OAUTH_REFRESH_TOKEN=${{ secrets.REACT_APP_OAUTH_REFRESH_TOKEN }}" >> .env
-          
+       
       - name: Install modules
         run: | 
           cd project
@@ -48,6 +41,18 @@ jobs:
           PUBLIC_URL=$(echo $GITHUB_REPOSITORY | sed -r 's/^.+\/(.+)$/\/\1\//')
           echo PUBLIC_URL=$PUBLIC_URL > ./env
 
+      - name: set .env
+        run: |
+          cd project
+          echo "REACT_APP_GA4_PROPERTY_ID=${{ secrets.REACT_APP_GA4_PROPERTY_ID }}" >> $GITHUB_ENV
+          echo "REACT_APP_OAUTH_CLIENT_ID=${{ secrets.REACT_APP_OAUTH_CLIENT_ID }}" >> $GITHUB_ENV
+          echo "REACT_APP_OAUTH_CLIENT_SECRET=${{ secrets.REACT_APP_OAUTH_CLIENT_SECRET }}" >> $GITHUB_ENV
+          echo "REACT_APP_OAUTH_REFRESH_TOKEN=${{ secrets.REACT_APP_OAUTH_REFRESH_TOKEN }}" >> $GITHUB_ENV
+          # cat .env
+        
+      - name: list
+        run: ls -l
+
       - name: build
         run: |
           ls
@@ -55,6 +60,7 @@ jobs:
           npm run build2
           ls
           cp build/index.html build/404.html
+          
       - name: gh-page
         uses: peaceiris/actions-gh-pages@v3
         with:
