@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import projects from "../projectData";
 import Slider from "react-slick";
 const Project = () => {
+  const [activeSlide, setActiveSlide] = useState(0);
   const settings = {
     dots: true,
     infinite: true,
@@ -9,6 +10,7 @@ const Project = () => {
     arrows: false,
     slidesToShow: 1,
     slidesToScroll: 1,
+    beforeChange: (_, next) => setActiveSlide(next),
   };
   projects[0].description.map((description, index) => {
     console.log(description);
@@ -24,7 +26,7 @@ const Project = () => {
         <div className="space-y-24 my-7">
           <Slider {...settings}>
             {projects.map((project, index) => (
-              <div key={index}>
+              <div key={index} key={index} hidden={activeSlide !== index ? true : undefined}>
                 <article className="flex flex-wrap md:justify-between md:items-center">
                   <picture
                     className={
