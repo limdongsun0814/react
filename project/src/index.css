@@ -198,7 +198,3 @@ textarea {
   }
 }
 
-
-.slick-cloned .slick-slide[aria-hidden="true"] .slick-slide[tabindex="-1"] {
-    display: none;
-}
