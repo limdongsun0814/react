@@ -3,10 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.slick-slide[aria-hidden=true] {
-   display:none;
-}
-
 .slick-dots li.slick-active button:before {
   color: #ffffff !important;
 }
@@ -200,4 +196,9 @@ textarea {
     transform: perspective(140px) rotateY(180deg);
     opacity: 0;
   }
+}
+
+
+.slick-slide[aria-hidden=true] {
+   display:none;
 }
