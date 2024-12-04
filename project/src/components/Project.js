@@ -6,7 +6,7 @@ const Project = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    arrows: false,
+    //arrows: false,
     slidesToShow: 1,
     slidesToScroll: 1,
   };
