@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.slick-slide[aria-hidden=true] {
+   display:none;
+}
+
 .slick-dots li.slick-active button:before {
   color: #ffffff !important;
 }
