@@ -7,7 +7,7 @@ const Project = () => {
     infinite: true,
     speed: 500,
     arrows: false,
-    sliesToShow: 1,
+    slidesToShow: 1,
     slidesToScroll: 1,
   };
   projects[0].description.map((description, index) => {
