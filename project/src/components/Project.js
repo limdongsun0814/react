@@ -26,7 +26,7 @@ const Project = () => {
         <div className="space-y-24 my-7">
           <Slider {...settings}>
             {projects.map((project, index) => (
-              <div key={index} key={index} hidden={activeSlide !== index ? true : undefined}>
+              <div key={index} hidden={activeSlide !== index ? true : undefined}>
                 <article className="flex flex-wrap md:justify-between md:items-center">
                   <picture
                     className={
