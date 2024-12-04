@@ -11,7 +11,7 @@ function App() {
     console = window.console || {};
     console.log = function no_console() {};
     console.warn = function no_console() {};
-    console.error = function () {};
+    console.error = function no_console() {};
   }
   
  
