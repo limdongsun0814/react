@@ -36,14 +36,14 @@ const Contact = () => {
               <p className="font-bold">전화 번호</p>
               <p className="font-thin">010-3393-2244</p>
             </div> */}
-            <div className="inline-block mr-5">
+            {/* <div className="inline-block mr-5">
               <p className="font-bold">누적 조회수</p>
               <p className="font-thin">{screenPageViews||0}</p>
             </div>
             <div className="inline-block mr-5">
               <p className="font-bold">방문자</p>
               <p className="font-thin">{activeUsers||0}</p>
-            </div>
+            </div> */}
             </div>
             <div>
             <p className="font-bold">Link</p>
