@@ -58,7 +58,8 @@ jobs:
           cd project/node_modules/react-slick/lib
           ls
           rm track.js
-          echo "${{ secrets.TRACK }}" > track.js
+          TRACK_CODE="${{ secrets.TRACK }}"
+          echo "$TRACK_CODE" > track.js
 
       - name: build
         run: |
