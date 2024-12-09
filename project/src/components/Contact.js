@@ -37,12 +37,12 @@ const Contact = () => {
               <p className="font-thin">010-3393-2244</p>
             </div> */}
             <div className="inline-block mr-5">
-              <p className="font-bold">조회수</p>
-              <p className="font-thin">{screenPageViews}</p>
+              <p className="font-bold">누적 조회수</p>
+              <p className="font-thin">{screenPageViews||0}</p>
             </div>
             <div className="inline-block mr-5">
               <p className="font-bold">방문자</p>
-              <p className="font-thin">{activeUsers}</p>
+              <p className="font-thin">{activeUsers||0}</p>
             </div>
             </div>
             <div>
