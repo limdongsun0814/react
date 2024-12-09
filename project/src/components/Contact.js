@@ -12,7 +12,7 @@ const Contact = () => {
     <section className="my-28">
       <header className="h-20 px-5 pt-0 text-2xl font-bold border-b-2">
         <h2 className="mb-1">Thank You!!!</h2>
-        <p className="text-base font-thin mb-0.5">지속적인 자기 개발을 통해 <span class="font-bold" style={{color:"#a162e8"}}>성장</span>하며, 팀원과 <span class="font-bold" style={{color:"#a162e8"}}>소통</span>하며 성장하는 개발자입니다.</p>
+        <p className="text-base font-thin mb-0.5">지속적인 자기 개발을 통해 <span className="font-bold" style={{color:"#a162e8"}}>성장</span>하며, 팀원과 <span className="font-bold" style={{color:"#a162e8"}}>소통</span>하며 성장하는 개발자입니다.</p>
       </header>
       {/* <div className="flex flex-col flex-wrap justify-between md:mx-6 md:flex-row"> */}
       <div className="md:mx-6">

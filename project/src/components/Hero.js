@@ -27,18 +27,18 @@ const Hero = () => {
           <br></br>
           임동선입니다.
         </h1>
-        <span className="font-bold text-orange-200 ">“사용자가 이용하고 싶은 서비스를 개발하는 개발자입니다.”</span>
+        <span className="font-bold text-orange-200">“사용자가 이용하고 싶은 서비스를 개발하는 개발자입니다.”</span>
         <p className="leading-relaxed tracking-wide">
-          &nbsp;"모든 서비스에는 사용자가 존재하고, <span class="font-bold" style={{color:"#a162e8"}}>사용자가 사용하기 쉽고 친숙해야</span> 서비스의 가치를 인정받을 수 있다"고 생각하는 개발자입니다.  
+          &nbsp;"모든 서비스에는 사용자가 존재하고, <span className="font-bold" style={{color:"#a162e8"}}>사용자가 사용하기 쉽고 친숙해야</span> 서비스의 가치를 인정받을 수 있다"고 생각하는 개발자입니다.  
           {" "}
         </p>
         {/* <br></br> */}
         <p className="leading-relaxed tracking-wide">
-          대학원 시절에는 <span class="font-bold" style={{color:"#a162e8"}}>사물 인터넷(IoT) 개발</span>했습니다.
+          대학원 시절에는 <span className="font-bold" style={{color:"#a162e8"}}>사물 인터넷(IoT) 개발</span>했습니다.
         </p>
         {/* <br></br> */}
         <p className="leading-relaxed tracking-wide">
-          졸업 후, '<span class="font-bold" style={{color:"#a162e8"}}>웹 서비스 개발자</span>'라는 꿈을 이루기 위해 JAVA 웹 서비스 풀스택 교육 과정을 이수했습니다.{" "}
+          졸업 후, '<span className="font-bold" style={{color:"#a162e8"}}>웹 서비스 개발자</span>'라는 꿈을 이루기 위해 JAVA 웹 서비스 풀스택 교육 과정을 이수했습니다.{" "}
         </p>
         {/* <br></br> */}
         <p className="leading-relaxed tracking-wide">
@@ -46,7 +46,7 @@ const Hero = () => {
         </p>
         {/* <br></br> */}
         <p className="leading-relaxed tracking-wide"> 
-          개발 목표는 <span class="font-bold" style={{color:"#a162e8"}}>사용자가 이용하기 쉽운 서비스 개발</span>을 목표로 성장하는 개발자입니다.
+          개발 목표는 <span className="font-bold" style={{color:"#a162e8"}}>사용자가 이용하기 쉽운 서비스 개발</span>을 목표로 성장하는 개발자입니다.
           {" "}
         </p>
         <br></br>
@@ -54,7 +54,7 @@ const Hero = () => {
         <span className="font-bold text-orange-200 ">“소통과 성장, 계획”</span>
         {/* css와 디자인 부분 */}
         <p className="leading-relaxed tracking-wide">
-          &nbsp;<span class="font-bold" style={{color:"#a162e8"}}>지속적인 자기 개발</span>을 통해 역량을 강화하고 팀원과  <span class="font-bold" style={{color:"#a162e8"}}>소통</span>하며 공유하며 성장하는 개발자입니다.
+          &nbsp;<span className="font-bold" style={{color:"#a162e8"}}>지속적인 자기 개발</span>을 통해 역량을 강화하고 팀원과  <span className="font-bold" style={{color:"#a162e8"}}>소통</span>하며 공유하며 성장하는 개발자입니다.
         </p>
         {/* <br></br> */}
         <p className="leading-relaxed tracking-wide">
@@ -62,7 +62,7 @@ const Hero = () => {
         </p>
         {/* <br></br> */}
         <p className="leading-relaxed tracking-wide">
-          <span class="font-bold" style={{color:"#a162e8"}}>주단위 계획</span>하여 시간을 효율적으로 관리하여 성장하는 개발자입니다.
+          <span className="font-bold" style={{color:"#a162e8"}}>주단위 계획</span>하여 시간을 효율적으로 관리하여 성장하는 개발자입니다.
           {" "}
         </p>
       </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
@@ -50,7 +50,8 @@
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", () => {
           navigator.serviceWorker
-            .register("./serviceWorker.js")
+            // .register("./serviceWorker.js")
+            .register("./mockServiceWorker.js")
             .then((reg) => console.log("Success", reg.scope))
             .catch((err) => console.log(err));
         });

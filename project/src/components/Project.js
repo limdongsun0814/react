@@ -49,7 +49,7 @@ const Project = () => {
                       {project.title}
                     </h3>
                     {project.description.map((description, index) => (
-                      <div>
+                      <div key={index}>
                         <span className="font-bold text-orange-200 ">
                           {description.titleDescription}
                         </span>
@@ -65,7 +65,7 @@ const Project = () => {
                             }
                             console.log(cnt)
                             const spaces = Array.from({ length: cnt }, (_, i) => <span key={i}>&nbsp;</span>);
-                            return(<li>{spaces}{description}</li>)
+                            return(<li key={index}>{spaces}{description}</li>)
                           })}
                         </ol>
                       </div>
