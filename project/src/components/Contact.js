@@ -23,7 +23,7 @@ const Contact = () => {
     a.remove();
 
     setSendMail(false);
-    setMail({ title: "", message: "" });
+    //setMail({ title: "", message: "" });
   }
 
   return (
