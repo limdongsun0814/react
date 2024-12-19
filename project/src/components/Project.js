@@ -26,7 +26,10 @@ const Project = () => {
         <div className="space-y-24 my-7">
           <Slider {...settings}>
             {projects.map((project, index) => (
-              <div key={index} hidden={activeSlide !== index ? true : undefined}>
+              <div
+                key={index}
+                hidden={activeSlide !== index ? true : undefined}
+              >
                 <article className="flex flex-wrap md:justify-between md:items-center">
                   <picture
                     className={
@@ -44,7 +47,7 @@ const Project = () => {
                       src={project.image}
                     />
                   </picture>
-                  <div className="flex flex-col w-full mx-1 my-3 space-y-3 overflow-auto md:w-5/12 ">
+                  <div className="flex flex-col w-full mx-1 my-3 space-y-3 md:w-5/12 ">
                     <h3 className="text-lg font-bold uppercase">
                       {project.title}
                     </h3>
@@ -54,26 +57,36 @@ const Project = () => {
                           {description.titleDescription}
                         </span>
                         <ol>
-                            {description.descriptionList.map((description,index)=>{
-                            let cnt = 0;
-                            for(const c of description){
-                              if(c==" "){
-                                cnt+=1;
-                              }else{
-                                break;
+                          {description.descriptionList.map(
+                            (description, index) => {
+                              let cnt = 0;
+                              for (const c of description) {
+                                if (c == " ") {
+                                  cnt += 1;
+                                } else {
+                                  break;
+                                }
                               }
+                              console.log(cnt);
+                              const spaces = Array.from(
+                                { length: cnt },
+                                (_, i) => <span key={i}>&nbsp;</span>
+                              );
+                              return (
+                                <li key={index}>
+                                  {spaces}
+                                  {description}
+                                </li>
+                              );
                             }
-                            console.log(cnt)
-                            const spaces = Array.from({ length: cnt }, (_, i) => <span key={i}>&nbsp;</span>);
-                            return(<li key={index}>{spaces}{description}</li>)
-                          })}
+                          )}
                         </ol>
                       </div>
                     ))}
-                    <div className="flex pb-2 space-x-3 overflow-auto">
+                    <div className="flex flex-wrap pb-2 space-x-3">
                       {project.tools.map((disc, index) => (
                         <span
-                          className="px-2 py-1 text-sm border border-gray-500 rounded-lg"
+                          className="px-2 py-1 m-2 text-sm border border-gray-500 rounded-lg"
                           key={index}
                         >
                           {disc}
