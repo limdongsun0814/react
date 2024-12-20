@@ -64,7 +64,7 @@ const Hero = () => {
           <span className="font-bold" style={{ color: "#a162e8" }}>
             사용자가 이용하기 쉽운 서비스 개발
           </span>
-          을 목표로 성장하는 개발자입니다.{" "}
+          을 중요하게 생각하는 개발자입니다.{" "}
         </p>
         <br></br>
 
