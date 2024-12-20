@@ -1,25 +1,21 @@
 import React, { createElement, useContext, useEffect, useState } from "react";
 import { getTotalActiveUsersAndScreenPageViews } from "../utils/GA4";
 import classNames from "classnames";
+import { WindowWidthSize } from "../App";
 
 const Contact = () => {
   const [sendMail, setSendMail] = useState(false);
   const [mail, setMail] = useState({ title: "", message: "" });
-  const [windowWidth,setWindowWidth]=useState(window.innerWidth);
-  useEffect(()=>{
-    const handleResize = ()=>{
-      console.log(window.innerWidth,"width");
-      setWindowWidth(window.innerWidth);
-    };
-    window.addEventListener('resize',handleResize);
-    return ()=>{
-      window.removeEventListener('resize',handleResize);
-    }
-  },[]);
+  const windowWidth = useContext(WindowWidthSize);
 
-  const modal = classNames(" p-6 rounded-lg shadow-lg bg-gray ",{
-    "w-1/3":windowWidth>=500,
-  });
+  let modal;
+
+  if (windowWidth >= 889) {
+    modal = "w-1/4";
+  } else {
+    modal = "";
+  }
+
   function changeMail(index, value) {
     setMail({ ...mail, [index]: value });
   }
@@ -46,7 +42,9 @@ const Contact = () => {
     <section className="my-28">
       {sendMail && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-          <div className={modal}>
+          <div
+            className={classNames("p-6 rounded-lg shadow-lg bg-gray", modal)}
+          >
             <form
               className="flex flex-col justify-end w-full m-auto space-y-3"
               onSubmit={(e) => sendMailFunc(e)}
@@ -92,7 +90,7 @@ const Contact = () => {
           </div>
         </div>
       )}
-      <header className=" px-5 pb-3 pt-0 text-2xl font-bold border-b-2">
+      <header className="px-5 pt-0 pb-3 text-2xl font-bold border-b-2 ">
         <h2 className="mb-1">Thank You!!!</h2>
         <p className="text-base font-thin mb-0.5">
           지속적인 자기 개발을 통해{" "}
