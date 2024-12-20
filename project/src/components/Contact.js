@@ -1,9 +1,25 @@
 import React, { createElement, useContext, useEffect, useState } from "react";
 import { getTotalActiveUsersAndScreenPageViews } from "../utils/GA4";
+import classNames from "classnames";
 
 const Contact = () => {
   const [sendMail, setSendMail] = useState(false);
   const [mail, setMail] = useState({ title: "", message: "" });
+  const [windowWidth,setWindowWidth]=useState(window.innerWidth);
+  useEffect(()=>{
+    const handleResize = ()=>{
+      console.log(window.innerWidth,"width");
+      setWindowWidth(window.innerWidth);
+    };
+    window.addEventListener('resize',handleResize);
+    return ()=>{
+      window.removeEventListener('resize',handleResize);
+    }
+  },[]);
+
+  const modal = classNames(" p-6 rounded-lg shadow-lg bg-gray ",{
+    "w-1/3":windowWidth>=500,
+  });
   function changeMail(index, value) {
     setMail({ ...mail, [index]: value });
   }
@@ -30,7 +46,7 @@ const Contact = () => {
     <section className="my-28">
       {sendMail && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="w-1/3 p-6 rounded-lg shadow-lg bg-gray">
+          <div className="">
             <form
               className="flex flex-col justify-end w-full m-auto space-y-3"
               onSubmit={(e) => sendMailFunc(e)}
