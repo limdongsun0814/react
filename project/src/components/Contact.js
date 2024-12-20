@@ -76,7 +76,7 @@ const Contact = () => {
           </div>
         </div>
       )}
-      <header className="h-20 px-5 pt-0 text-2xl font-bold border-b-2">
+      <header className=" px-5 pb-3 pt-0 text-2xl font-bold border-b-2">
         <h2 className="mb-1">Thank You!!!</h2>
         <p className="text-base font-thin mb-0.5">
           지속적인 자기 개발을 통해{" "}
