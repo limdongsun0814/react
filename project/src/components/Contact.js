@@ -46,7 +46,7 @@ const Contact = () => {
     <section className="my-28">
       {sendMail && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="">
+          <div className={modal}>
             <form
               className="flex flex-col justify-end w-full m-auto space-y-3"
               onSubmit={(e) => sendMailFunc(e)}
