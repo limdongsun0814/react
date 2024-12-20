@@ -55,8 +55,8 @@ const Hero = () => {
         </p>
         {/* <br></br> */}
         <p className="leading-relaxed tracking-wide">
-          동네빵집 플랫폼과 멍줍 프로젝트를 통해 RDBMS, Backend 개발 역량을
-          강화했습니다.
+          교육 과정 이수 중에 동네빵집 플랫폼과 멍줍 프로젝트를 통해 RDBMS,
+          Backend 개발 역량을 강화했습니다.
         </p>
         {/* <br></br> */}
         <p className="leading-relaxed tracking-wide">
