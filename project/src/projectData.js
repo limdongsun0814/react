@@ -32,6 +32,7 @@ const projects = [
     github: "https://github.com/shinhan3/mungzoup",
     linkCheck: false,
     link: "",
+    video: "./video/밸브 제어 50 to 1.mp4",
     day: "2024-01-08 ~ 2024-02-29 참여 인원: 6",
   },
   {
@@ -68,6 +69,7 @@ const projects = [
     github: "https://github.com/limdongsun0814/4shinhan",
     linkCheck: false,
     link: "",
+    video: "./video/밸브 제어 50 to 1.mp4",
     day: "2023-11-03 ~ 2024-01-05 참여 인원: 6",
   }, //이미지
 
@@ -99,6 +101,7 @@ const projects = [
     github: "https://github.com/limdongsun0814/SmartValve",
     linkCheck: true,
     link: "https://www.mdpi.com/2075-1702/10/8/659",
+    video: "./video/밸브 제어 50 to 1.mp4",
     day: "2020-06-28 ~ 2021-12-28 참여 인원: 4",
   },
   {
@@ -130,6 +133,7 @@ const projects = [
     github: "https://github.com/limdongsun0814/SmartFarm",
     linkCheck: true,
     link: "https://ieeexplore.ieee.org/document/9268238",
+    video: "./video/밸브 제어 50 to 1.mp4",
     day: "2019-01-02 ~ 2019-12-29 참여 인원: 4",
   },
   {
@@ -167,6 +171,7 @@ const projects = [
     github: "https://github.com/limdongsun0814/Tap-Inspection",
     linkCheck: true,
     link: "https://ieeexplore.ieee.org/document/9268255",
+    video: "./video/밸브 제어 50 to 1.mp4",
     day: "2019-01-02 ~ 2019-12-29 참여 인원: 4",
   },
   {
@@ -207,6 +212,7 @@ const projects = [
     github: "https://github.com/limdongsun0814/Space-Robotics-Challenge",
     linkCheck: true,
     link: "https://www.riss.kr/search/detail/DetailView.do?p_mat_type=be54d9b8bc7cdb09&control_no=7b741b8df56ce8f9ffe0bdc3ef48d419",
+    video: "./video/밸브 제어 50 to 1.mp4",
     day: "2020-03-16 ~ 2021-06-30 참여 인원: 4",
   },
   // {
