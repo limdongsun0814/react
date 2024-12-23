@@ -1,10 +1,12 @@
 import React, { useRef, useState } from "react";
 import ReactPlayer from "react-player";
 import RangeSlider from "react-range-slider-input";
+import { Tooltip } from "react-tooltip";
 import "react-range-slider-input/dist/style.css";
 import "../range-slider.css";
 
 function VideoPlayer(props) {
+  const playbackRateList = [0.5, 1.0, 1.5, 2.0]; //[0.25, 0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0]
   const playerRef = useRef(null);
   const { src, title, setClose } = props;
   const [playing, setPlaying] = useState(false);
@@ -12,7 +14,11 @@ function VideoPlayer(props) {
   const [volumeToggle, setVolumeToggle] = useState(true);
   const [menu, setMenu] = useState(false);
   const [played, setPlayed] = useState({ played: 0, totalPlayed: 0 });
+  const [playbackRate, setPlaybackRate] = useState(1.0);
 
+  const handlePlaybackRate = (value) => {
+    setPlaybackRate(value);
+  };
   const fullscreen = () => {
     console.log(playerRef.current, "fullscreen");
     if (playerRef.current) {
@@ -52,15 +58,20 @@ function VideoPlayer(props) {
           console.log(value, "played");
           setPlayed({ ...played, played: value.playedSeconds });
         }}
+        onPlaybackRateChange={(value) => {
+          console.log(value);
+          setPlaybackRate(value);
+        }}
         onClick={() => {
           setMenu(true);
         }}
         width={"100%"}
         height={"100%"}
         volume={volume / 100}
+        playbackRate={playbackRate}
       ></ReactPlayer>
       {menu && (
-        <div className="absolute top-0 flex w-full h-full bg-opacity-50 bg-gray">
+        <div className="absolute top-0 flex w-full h-full bg-opacity-50 select-none bg-gray">
           <div className="absolute top-0 flex w-full bg-black bg-opacity-50 h-[10%] items-center justify-center">
             <h2 className="font-bold text-center">{title}</h2>
           </div>
@@ -70,7 +81,7 @@ function VideoPlayer(props) {
               setMenu(false);
             }}
           ></div>
-          <div className="absolute top-0 right-0 flex w-[5%] h-[10%] items-center justify-end bg-purple-500 bg-opacity-30">
+          <div className="absolute top-0 right-0 flex w-[5%] h-[10%] items-center justify-end bg-purple-500 bg-opacity-50">
             <h2
               className="m-auto font-bold cursor-pointer text-end"
               onClick={() => {
@@ -140,7 +151,7 @@ function VideoPlayer(props) {
               </div>
             </div>
             {/* 진행 */}
-            <div className="w-[70%] h-full flex items-center justify-start">
+            <div className="w-[65%] h-full flex items-center justify-center">
               <div>
                 <h2 className="font-bold text-center">
                   {parseInt(Math.ceil(played.played) / 60) +
@@ -172,13 +183,47 @@ function VideoPlayer(props) {
               </div>
             </div>
             {/* 설정 */}
-            <div className="w-[5%] h-full">
-              <img
+            <div className="w-[10%] h-full">
+              {/* <img
                 src="./images/icons/video/setting.svg"
                 alt="link to live website"
                 className="cursor-pointer"
+                id="setting"
                 onClick={() => {}}
-              />
+              /> */}
+
+              <div
+                className="flex items-center justify-center h-full cursor-pointer"
+                id="setting"
+              >
+                <h2 className="font-bold text-center ">
+                  x {playbackRate.toFixed(1)}
+                </h2>
+              </div>
+              <Tooltip
+                anchorSelect="#setting"
+                place="top"
+                style={{
+                  backgroundColor: "rgb(18 18 18 / var(--tw-bg-opacity))",
+                }}
+                clickable
+              >
+                <div className="flex flex-col items-center justify-center">
+                  {playbackRateList.map((value, index) => (
+                    <div
+                      className="px-4 py-1 rounded cursor-pointer hover:bg-zinc-800"
+                      onClick={(e) => {
+                        handlePlaybackRate(value);
+                      }}
+                      key={index}
+                    >
+                      <h2 className="font-bold text-center ">
+                        x {value.toFixed(1)}
+                      </h2>
+                    </div>
+                  ))}
+                </div>
+              </Tooltip>
             </div>
             {/* 전체 */}
             <div className="w-[5%] h-full" onClick={fullscreen}>

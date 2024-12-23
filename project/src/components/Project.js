@@ -135,23 +135,22 @@ const Project = () => {
                         </a>
                       )}
                       {project.video && (
-                        <a
-                          href={false}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="cursor-pointer"
-                          onClick={() => {
-                            videoSelector(project.video, project.title);
-                          }}
-                        >
-                          <img
-                            src="./images/icons/video.svg"
-                            alt="link to live website"
-                            className="w-6 h-6"
-                            width="24px"
-                            height="24px"
-                          />
-                        </a>
+                        <div className="flex items-center">
+                          <button
+                            className="cursor-pointer"
+                            onClick={() => {
+                              videoSelector(project.video, project.title);
+                            }}
+                          >
+                            <img
+                              src="./images/icons/video.svg"
+                              alt="link to live website"
+                              className="w-6 h-6"
+                              width="24px"
+                              height="24px"
+                            />
+                          </button>
+                        </div>
                       )}
                       <div className="px-2 py-1 text-sm border border-gray-500 rounded-lg">
                         {project.day}
