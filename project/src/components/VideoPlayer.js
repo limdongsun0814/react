@@ -7,6 +7,7 @@ import "../range-slider.css";
 
 function VideoPlayer(props) {
   const playbackRateList = [0.5, 1.0, 1.5, 2.0]; //[0.25, 0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0]
+  const videoPath = process.env.REACT_APP_VIDEO_PATH_SECRET;
   const playerRef = useRef(null);
   const { src, title, setClose } = props;
   const [playing, setPlaying] = useState(false);
@@ -37,11 +38,12 @@ function VideoPlayer(props) {
       }
     }
   };
+
   return (
     <div className="relative w-full h-full">
       <ReactPlayer
         ref={playerRef}
-        url={src}
+        url={videoPath + src}
         playing={playing}
         onPause={() => {
           console.log("onPause");
