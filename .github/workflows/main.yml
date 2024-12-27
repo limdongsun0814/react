@@ -77,7 +77,8 @@ jobs:
         run: | 
           cd ./project/public/video
           ls
-          
+      - name: git lfs logs last
+        run: git lfs logs last
       - name: gh-page
         uses: peaceiris/actions-gh-pages@v3
         with:
