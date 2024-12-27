@@ -69,7 +69,7 @@ function VideoPlayer(props) {
         }}
         width={"100%"}
         height={"100%"}
-        volume={!volumeToggle ? volume / 100 : 0}
+        volume={volumeToggle ? volume / 100 : 0}
         playbackRate={playbackRate}
       ></ReactPlayer>
       {menu && (
