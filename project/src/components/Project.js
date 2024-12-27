@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import projects from "../projectData";
 import Slider from "react-slick";
+import VideoPlayer from "./VideoPlayer";
+import classNames from "classnames";
 const Project = () => {
   const [activeSlide, setActiveSlide] = useState(0);
+  const [video, setVideo] = useState({ src: "", title: "" });
+  const [videoModal, setVideoModal] = useState(false);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -12,9 +17,12 @@ const Project = () => {
     slidesToScroll: 1,
     beforeChange: (_, next) => setActiveSlide(next),
   };
-  projects[0].description.map((description, index) => {
-    console.log(description);
-  });
+
+  function videoSelector(src, title) {
+    setVideoModal(true);
+    setVideo({ src: src, title: title });
+  }
+
   // console.log(projects[0].description, "aaa");
   return (
     <>
@@ -22,7 +30,21 @@ const Project = () => {
         <header className="pt-10 text-2xl font-bold">
           <h2>Projects</h2>
         </header>
-
+        {videoModal && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+            <div
+              className={classNames("p-6 rounded-lg shadow-lg bg-gray w-1/2")}
+            >
+              <div className="m-auto">
+                <VideoPlayer
+                  src={video.src}
+                  title={video.title}
+                  setClose={setVideoModal}
+                />
+              </div>
+            </div>
+          </div>
+        )}
         <div className="space-y-24 my-7">
           <Slider {...settings}>
             {projects.map((project, index) => (
@@ -43,7 +65,7 @@ const Project = () => {
                       height="575px"
                       loading="lazy"
                       alt={project.title}
-                      className="rounded-lg"
+                      className="rounded-lg cursor-pointer"
                       src={project.image}
                     />
                   </picture>
@@ -93,6 +115,7 @@ const Project = () => {
                         </span>
                       ))}
                     </div>
+
                     <div className="relative flex w-auto space-x-5">
                       <a href={project.github} target="_blank" rel="noreferrer">
                         <img
@@ -102,6 +125,7 @@ const Project = () => {
                           height="24px"
                         />
                       </a>
+
                       {project.linkCheck && (
                         <a href={project.link} target="_blank" rel="noreferrer">
                           <img
@@ -111,6 +135,24 @@ const Project = () => {
                             height="24px"
                           />
                         </a>
+                      )}
+                      {project.video && (
+                        <div className="flex items-center">
+                          <button
+                            className="cursor-pointer"
+                            onClick={() => {
+                              videoSelector(project.video, project.title);
+                            }}
+                          >
+                            <img
+                              src="./images/icons/video.svg"
+                              alt="link to live website"
+                              className="w-6 h-6"
+                              width="24px"
+                              height="24px"
+                            />
+                          </button>
+                        </div>
                       )}
                       <div className="px-2 py-1 text-sm border border-gray-500 rounded-lg">
                         {project.day}
