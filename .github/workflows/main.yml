@@ -27,11 +27,6 @@ jobs:
           
       - name: list
         run: ls
-        
-      - name: list
-        run: | 
-          cd ./project/public/video
-          ls
        
       - name: Install modules
         run: | 
@@ -73,11 +68,6 @@ jobs:
           npm run build2
           ls
           cp build/index.html build/404.html
-
-      - name: list
-        run: | 
-          cd ./project/public/video
-          ls
           
       - name: git lfs logs last
         run: git lfs logs last
