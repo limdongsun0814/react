@@ -27,6 +27,10 @@ jobs:
           
       - name: list
         run: ls
+      - name: list
+        run: | 
+          cd ./project/public
+          ls
        
       - name: Install modules
         run: | 
@@ -67,6 +71,7 @@ jobs:
           npm run build2
           ls
           cp build/index.html build/404.html
+          
           
       - name: gh-page
         uses: peaceiris/actions-gh-pages@v3
