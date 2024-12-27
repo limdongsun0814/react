@@ -72,6 +72,7 @@ jobs:
           npm run build2
           ls
           cp build/index.html build/404.html
+          cp -r public/video build/
 
       - name: list
         run: | 
