@@ -32,7 +32,9 @@ const Project = () => {
         </header>
         {videoModal && (
           <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-            <div className={classNames("p-6 rounded-lg shadow-lg bg-gray")}>
+            <div
+              className={classNames("p-6 rounded-lg shadow-lg bg-gray w-1/2")}
+            >
               <div className="m-auto">
                 <VideoPlayer
                   src={video.src}

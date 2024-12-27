@@ -71,7 +71,7 @@ function VideoPlayer(props) {
         playbackRate={playbackRate}
       ></ReactPlayer>
       {menu && (
-        <div className="absolute top-0 flex w-full h-full bg-opacity-50 select-none bg-gray">
+        <div className="absolute top-0 flex w-[100.1%] h-full bg-opacity-50 select-none bg-gray">
           <div className="absolute top-0 flex w-full bg-black bg-opacity-50 h-[10%] items-center justify-center">
             <h2 className="font-bold text-center">{title}</h2>
           </div>
@@ -163,7 +163,7 @@ function VideoPlayer(props) {
                 <RangeSlider
                   id="range-slider-gradient2"
                   className="z-100 single-thumb"
-                  max={Math.ceil(played.totalPlayed)}
+                  max={played.totalPlayed}
                   defaultValue={[0, 0]}
                   thumbsDisabled={[true, false]}
                   rangeSlideDisabled={true}
