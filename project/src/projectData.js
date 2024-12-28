@@ -33,6 +33,8 @@ const projects = [
     linkCheck: false,
     link: "",
     video: "멍줍.mp4",
+    videoMobile:
+      "https://1drv.ms/v/c/dd3bc808d6b4a8bc/IQTv1L2z1RLyQ5awm81_5uFQAXm0kqd4RWxgYk8oj6wF0AY",
     day: "2024-01-08 ~ 2024-02-29 참여 인원: 6",
   },
   {
@@ -70,6 +72,8 @@ const projects = [
     linkCheck: false,
     link: "",
     video: "025.mp4",
+    videoMobile:
+      "https://1drv.ms/v/c/dd3bc808d6b4a8bc/IQRIC_Tb6TXURrUAY07tsrWxARIBNhlWn513MDfruiF6Z3M",
     day: "2023-11-03 ~ 2024-01-05 참여 인원: 6",
   }, //이미지
 
@@ -102,6 +106,8 @@ const projects = [
     linkCheck: true,
     link: "https://www.mdpi.com/2075-1702/10/8/659",
     video: "스마트벨브.mp4",
+    videoMobile:
+      "https://1drv.ms/v/c/dd3bc808d6b4a8bc/IQQztbhUAFW9Q7yuGyk7MVvsAYptZPvDNaD-oF4Bgx1IJZc",
     day: "2020-06-28 ~ 2021-12-28 참여 인원: 4",
   },
   {
@@ -134,6 +140,8 @@ const projects = [
     linkCheck: true,
     link: "https://ieeexplore.ieee.org/document/9268238",
     video: "스마트팜.mp4",
+    videoMobile:
+      "https://1drv.ms/v/c/dd3bc808d6b4a8bc/IQQUXJkM9X6OSqB2uwr6WngmAZ6fV6UR3xImQFQ5FIj88EI",
     day: "2019-01-02 ~ 2019-12-29 참여 인원: 4",
   },
   {
@@ -172,6 +180,8 @@ const projects = [
     linkCheck: true,
     link: "https://ieeexplore.ieee.org/document/9268255",
     video: "탭 검사기.mp4",
+    videoMobile:
+      "https://1drv.ms/v/c/dd3bc808d6b4a8bc/IQSAn5R9iLFzR4-oj300uw5dAQybz-1UBk8_XjFU9OppIuI",
     day: "2019-01-02 ~ 2019-12-29 참여 인원: 4",
   },
   {
@@ -213,6 +223,8 @@ const projects = [
     linkCheck: true,
     link: "https://www.riss.kr/search/detail/DetailView.do?p_mat_type=be54d9b8bc7cdb09&control_no=7b741b8df56ce8f9ffe0bdc3ef48d419",
     video: "나사대회.mp4",
+    videoMobile:
+      "https://1drv.ms/v/c/dd3bc808d6b4a8bc/IQSpXT6HZihqRbwGrFkOSPrnAbrNePIengppe4bW8izCrV8",
     day: "2020-03-16 ~ 2021-06-30 참여 인원: 4",
   },
   // {

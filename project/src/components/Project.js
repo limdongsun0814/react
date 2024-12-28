@@ -1,12 +1,27 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import projects from "../projectData";
 import Slider from "react-slick";
 import VideoPlayer from "./VideoPlayer";
 import classNames from "classnames";
+import { WindowWidthSize } from "../App";
+
 const Project = () => {
   const [activeSlide, setActiveSlide] = useState(0);
+  const windowWidth = useContext(WindowWidthSize);
   const [video, setVideo] = useState({ src: "", title: "" });
   const [videoModal, setVideoModal] = useState(false);
+
+  const videoMove = (url) => {
+    const a = document.createElement("a");
+    a.href = url;
+    a.target = "_blank";
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(() => {
+      window.URL.revokeObjectURL(url);
+    }, 1000);
+    a.remove();
+  };
 
   const settings = {
     dots: true,
@@ -141,7 +156,11 @@ const Project = () => {
                           <button
                             className="cursor-pointer"
                             onClick={() => {
-                              videoSelector(project.video, project.title);
+                              if (windowWidth > 776) {
+                                videoSelector(project.video, project.title);
+                              } else {
+                                videoMove(project.videoMobile);
+                              }
                             }}
                           >
                             <img
