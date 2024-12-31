@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react/static/css/main.1c32a795.css",
+    "main.css": "/react/static/css/main.30f014e8.css",
     "main.js": "/react/static/js/main.43f15c06.js",
     "static/js/140.44e50745.chunk.js": "/react/static/js/140.44e50745.chunk.js",
     "reactPlayerYouTube.js": "/react/static/js/reactPlayerYouTube.66d1ab61.chunk.js",
@@ -24,7 +24,7 @@
     "static/media/slick.ttf": "/react/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "index.html": "/react/index.html",
     "static/media/slick.woff": "/react/static/media/slick.295183786cd8a1389865.woff",
-    "main.1c32a795.css.map": "/react/static/css/main.1c32a795.css.map",
+    "main.30f014e8.css.map": "/react/static/css/main.30f014e8.css.map",
     "main.43f15c06.js.map": "/react/static/js/main.43f15c06.js.map",
     "140.44e50745.chunk.js.map": "/react/static/js/140.44e50745.chunk.js.map",
     "reactPlayerYouTube.66d1ab61.chunk.js.map": "/react/static/js/reactPlayerYouTube.66d1ab61.chunk.js.map",
@@ -44,7 +44,7 @@
     "453.bea66239.chunk.js.map": "/react/static/js/453.bea66239.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c32a795.css",
+    "static/css/main.30f014e8.css",
     "static/js/main.43f15c06.js"
   ]
 }
