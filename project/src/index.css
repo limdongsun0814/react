@@ -21,8 +21,11 @@ body {
   background-color: rgb(18, 18, 18);
   color: rgba(255, 255, 255, 0.87);
   font-size: 1rem;
-  /* font-family: pretendard, Arial, sans-serif; */
-  /* Roboto */
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  /* font-family: Roboto, Arial, sans-serif; */
   line-height: 1.5rem;
   font-weight: 400;
   text-rendering: optimizelegibility;
