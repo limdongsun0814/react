@@ -40,10 +40,10 @@ const Header = () => {
   };
   return (
     <>
-      <nav className="space-x-10 font-bold">
+      <nav className="space-x-10">
         <ul
           className={classNames(
-            "flex flex-row justify-center  font-thin md:space-x-10 md:text-xl md:justify-end ",
+            "flex flex-row justify-center  font-thin md:space-x-10 md:text-xl md:justify-end font-bold ",
             navClass
           )}
         >
