@@ -40,7 +40,7 @@ const Header = () => {
   };
   return (
     <>
-      <nav className="space-x-10">
+      <nav className="space-x-10 font-bold">
         <ul
           className={classNames(
             "flex flex-row justify-center  font-thin md:space-x-10 md:text-xl md:justify-end ",
